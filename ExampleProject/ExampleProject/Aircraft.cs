@@ -32,5 +32,6 @@ namespace ExampleProject
         public int NumEngines { get; set; }
         public EngineType TypeOfEngine { get; set; }
         public bool Winglets { get; set; }
+        public int NumTires { get; set; }
     }
 }
