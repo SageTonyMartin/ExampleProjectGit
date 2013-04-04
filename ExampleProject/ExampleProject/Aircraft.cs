@@ -8,6 +8,7 @@ namespace ExampleProject
 {
     public class Aircraft : Vehicle
     {
+        // Engine type for the Aircraft class
         public enum EngineType
         {
             None,
@@ -26,6 +27,7 @@ namespace ExampleProject
             WarpDrive
         }
 
+        // Public properties
         public float Wingspan { get; set; }
         public int NumEngines { get; set; }
         public EngineType TypeOfEngine { get; set; }
