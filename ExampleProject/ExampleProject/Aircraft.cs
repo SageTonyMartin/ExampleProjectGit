@@ -19,8 +19,10 @@ namespace ExampleProject
             DuctedFan,
             UnductedFan,
             Ramjet,
+            PulseJet,
             IonDrive,
             FissionDrive,
+            FusionDrive,
             WarpDrive
         }
 
