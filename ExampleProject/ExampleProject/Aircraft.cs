@@ -21,6 +21,7 @@ namespace ExampleProject
             Ramjet,
             IonDrive,
             FissionDrive,
+            FusionDrive,
             WarpDrive
         }
 
