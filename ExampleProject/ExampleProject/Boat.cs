@@ -20,6 +20,7 @@ namespace ExampleProject
             Catamaran, 
             Fishing, 
             CruiseShip, 
+            BattleShip,
             AircraftCarrier
         }
 
