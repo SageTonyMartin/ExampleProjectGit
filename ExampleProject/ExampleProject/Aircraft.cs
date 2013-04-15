@@ -25,6 +25,7 @@ namespace ExampleProject
             WarpDrive
         }
 
+        // Public properties
         public float Wingspan { get; set; }
         public int NumEngines { get; set; }
         public EngineType TypeOfEngine { get; set; }
