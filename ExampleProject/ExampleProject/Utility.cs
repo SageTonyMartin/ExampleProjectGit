@@ -8,7 +8,7 @@ namespace ExampleProject
 {
     public class Utility
     {
-        private List<string> VehicleTypeList;
+        private List<string> _vehicleTypeList;
 
         public Utility()
         {
