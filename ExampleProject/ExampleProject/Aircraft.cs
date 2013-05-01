@@ -31,5 +31,6 @@ namespace ExampleProject
         public EngineType TypeOfEngine { get; set; }
         public bool Winglets { get; set; }   // Customers requested a Winglets property
         public int CrewSize { get; set; }
+        public int PassengerCapacity {get; set }
     }
 }
