@@ -12,17 +12,17 @@ namespace ExampleProject
 
         public Utility()
         {
-            VehicleTypeList = new List<string>();
-            VehicleTypeList.Add("Aircraft");
-            VehicleTypeList.Add("Automobile");
-            VehicleTypeList.Add("Boat");
-            VehicleTypeList.Add("Locomotive");
-            VehicleTypeList.Add("Vehicle");
+            _vehicleTypeList = new List<string>();
+            _vehicleTypeList.Add("Aircraft");
+            _vehicleTypeList.Add("Automobile");
+            _vehicleTypeList.Add("Boat");
+            _vehicleTypeList.Add("Locomotive");
+            _vehicleTypeList.Add("Vehicle");
         }
 
         public List<string> VehicleTypes
         {
-            get { return VehicleTypeList; }
+            get { return _vehicleTypeList; }
         }
     }
 }
