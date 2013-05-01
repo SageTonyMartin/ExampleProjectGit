@@ -22,6 +22,7 @@ namespace ExampleProject
             CruiseShip, 
             BattleShip,
             AircraftCarrier
+            Destroyer
         }
 
         public BoatType TypeOfBoat { get; set; }
