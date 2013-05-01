@@ -101,6 +101,7 @@ namespace ExampleProjectTests
                 _aircraft.NumPassengers = 4;
                 _aircraft.NumEngines = 2;
                 _aircraft.Wingspan = 272.5F;
+                _aircraft.CrewSize = 2;
                 // Test default value of EngineType before it is set to see if it picks up the default.
                 Assert.AreEqual(Aircraft.EngineType.None, _aircraft.TypeOfEngine);
                 _aircraft.TypeOfEngine = Aircraft.EngineType.HighBypassTurbofan;
@@ -108,6 +109,7 @@ namespace ExampleProjectTests
                 Assert.AreEqual(4, _aircraft.NumPassengers);
                 Assert.AreEqual(2, _aircraft.NumEngines);
                 Assert.AreEqual(272.5F, _aircraft.Wingspan);
+                Assert.AreEqual(2, _aircraft.CrewSize);
                 Assert.AreEqual(Aircraft.EngineType.HighBypassTurbofan, _aircraft.TypeOfEngine);
 
                 // Low boundary conditions
