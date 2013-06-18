@@ -109,3 +109,4 @@ UpgradeLog*.XML
 
 # Other file types
 Thumbs.db
+.klocwork/

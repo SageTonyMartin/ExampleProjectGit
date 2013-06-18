@@ -14,9 +14,12 @@ namespace ExampleProject
         public enum FuelType
         {
             None,
+            Wood,
+            Coal,
             Electric,
             Diesel,
-            Gasoline
+            Gasoline,
+            Maglev
         }
 
         public string Model { get; set; }
