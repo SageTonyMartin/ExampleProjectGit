@@ -27,5 +27,6 @@ namespace ExampleProject
         public string TypeOfEngine { get; set; }
         public DateTime LastMaintenanceDate { get; set; }
         public float HaulingCapacityTons { get; set; }
+        public float FuelCapacityGallons { get; set; }
     }
 }
