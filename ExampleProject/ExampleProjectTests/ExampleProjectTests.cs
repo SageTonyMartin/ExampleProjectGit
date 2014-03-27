@@ -11,6 +11,7 @@ namespace ExampleProjectTests
 
         private Vehicle _vehicle;
         private Aircraft _aircraft;
+        private Ultralight _ultralight;
         private Automobile _car;
         private Boat _boat;
         private Locomotive _loco;
@@ -33,6 +34,13 @@ namespace ExampleProjectTests
         {
             _aircraft = new Aircraft();
             Assert.IsNotNull(_aircraft);
+        }
+
+        [TestMethod]
+        public void CreateUltralight()
+        {
+            _ultralight = new Ultralight();
+            Assert.IsNotNull(_ultralight);
         }
 
         [TestMethod]
@@ -101,7 +109,6 @@ namespace ExampleProjectTests
                 _aircraft.NumPassengers = 4;
                 _aircraft.NumEngines = 2;
                 _aircraft.Wingspan = 272.5F;
-                _aircraft.CrewSize = 2;
                 // Test default value of EngineType before it is set to see if it picks up the default.
                 Assert.AreEqual(Aircraft.EngineType.None, _aircraft.TypeOfEngine);
                 _aircraft.TypeOfEngine = Aircraft.EngineType.HighBypassTurbofan;
@@ -109,7 +116,6 @@ namespace ExampleProjectTests
                 Assert.AreEqual(4, _aircraft.NumPassengers);
                 Assert.AreEqual(2, _aircraft.NumEngines);
                 Assert.AreEqual(272.5F, _aircraft.Wingspan);
-                Assert.AreEqual(2, _aircraft.CrewSize);
                 Assert.AreEqual(Aircraft.EngineType.HighBypassTurbofan, _aircraft.TypeOfEngine);
 
                 // Low boundary conditions
@@ -131,6 +137,35 @@ namespace ExampleProjectTests
                 Assert.AreEqual(int.MaxValue, _aircraft.MaxSpeed);
                 Assert.AreEqual(float.MaxValue, _aircraft.Wingspan);
                 Assert.AreEqual(int.MaxValue, _aircraft.NumEngines);
+            }
+        }
+
+        [TestMethod]
+        public void TestUltralightAttributes()
+        {
+            _ultralight = new Ultralight();
+            if (!_ultralight.Equals(null))
+            {
+                _ultralight.Manufacturer = "Quicksilver";
+                _ultralight.Model = "GT 500";
+                _ultralight.RequiresPilotsLicense = true;
+                _ultralight.NumPassengers = 1;
+                _ultralight.MaxSpeed = 88;
+                _ultralight.NumEngines = 1;
+                _ultralight.Range = 255;
+                _ultralight.SailMaterial = "Nylon";
+                _ultralight.TypeOfEngine = Aircraft.EngineType.Reciprocating;
+                _ultralight.Wingspan = 30;
+                Assert.AreEqual("Quicksilver", _ultralight.Manufacturer);
+                Assert.AreEqual("GT 500", _ultralight.Model);
+                Assert.AreEqual("Nylon", _ultralight.SailMaterial);
+                Assert.AreEqual(true, _ultralight.RequiresPilotsLicense);
+                Assert.AreEqual(1, _ultralight.NumPassengers);
+                Assert.AreEqual(88, _ultralight.MaxSpeed);
+                Assert.AreEqual(1, _ultralight.NumEngines);
+                Assert.AreEqual(255, _ultralight.Range);
+                Assert.AreEqual(Aircraft.EngineType.Reciprocating, _ultralight.TypeOfEngine);
+                Assert.AreEqual(30, _ultralight.Wingspan);
             }
         }
 

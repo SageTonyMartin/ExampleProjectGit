@@ -19,36 +19,11 @@ namespace ExampleProject
             DuctedFan,
             UnductedFan,
             Ramjet,
-            IonDrive,
-            FissionDrive,
-            FusionDrive,
             WarpDrive
         }
 
-        public enum AircraftType
-        {
-            Airliner,
-            PrivateCivil,
-            BusinessJet,
-            RegionalJet,
-            Fighter,
-            Bomber,
-            Trainer,
-            ECM,
-            ASW,
-            Transport,
-            Ultralight,
-            Balloon
-        }
-
-        // Public properties
         public float Wingspan { get; set; }
         public int NumEngines { get; set; }
         public EngineType TypeOfEngine { get; set; }
-        public bool Winglets { get; set; }   // Customers requested a Winglets property
-        public int CrewSize { get; set; }
-        public int PassengerCapacity { get; set; }
-        public AircraftType TypeOfAircraft { get; set; }
-        public float HoursOfOperation { get; set; }
     }
 }

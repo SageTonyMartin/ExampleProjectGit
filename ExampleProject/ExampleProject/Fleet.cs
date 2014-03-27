@@ -17,6 +17,5 @@ namespace ExampleProject
         public List<Vehicle> VehicleList { get; set; }
         public decimal CurrentValue { get; set; }
         public int Count { get; set; }
-        public float DisplacementInTons { get; set; }
     }
 }

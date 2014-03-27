@@ -43,6 +43,8 @@ namespace ExerciseUI
                     break;
                 case "LOCOMOTIVE":
                     break;
+                case "ULTRALIGHT":
+                    break;
                 case "VEHICLE":
                     break;
                 default:
