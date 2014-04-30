@@ -11,11 +11,13 @@ namespace ExampleProject
     /// </summary>
     public class Locomotive : Vehicle
     {
+        // Add more fuel types as necessary
         public enum FuelType
         {
             None,
             Electric,
             Diesel,
+            Maglev,
             Gasoline
         }
 
