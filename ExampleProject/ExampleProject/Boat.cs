@@ -9,7 +9,8 @@ namespace ExampleProject
     public class Boat : Vehicle
     {
         private string currentDestination;
-
+        
+        // Enum for boat type - add more as more types of boats are invented.
         public enum BoatType
         {
             None,
@@ -23,6 +24,9 @@ namespace ExampleProject
             AircraftCarrier
         }
 
+        /// <summary>
+        /// Gets/sets type of boat.
+        /// </summary>
         public BoatType TypeOfBoat { get; set; }
 
         /// <summary>
