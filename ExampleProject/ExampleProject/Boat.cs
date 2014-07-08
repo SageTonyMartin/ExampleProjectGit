@@ -23,7 +23,8 @@ namespace ExampleProject
             CruiseShip, 
             Destroyer,
             AircraftCarrier,
-            Rafting
+            Rafting,
+            SteamBoat
         }
 
         /// <summary>
