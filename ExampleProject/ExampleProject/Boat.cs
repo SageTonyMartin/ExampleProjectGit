@@ -22,7 +22,8 @@ namespace ExampleProject
             Fishing, 
             CruiseShip, 
             Destroyer,
-            AircraftCarrier
+            AircraftCarrier,
+            Rafting
         }
 
         /// <summary>
