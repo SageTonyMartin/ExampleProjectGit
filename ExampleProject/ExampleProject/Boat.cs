@@ -24,7 +24,8 @@ namespace ExampleProject
             Destroyer,
             AircraftCarrier,
             Rafting,
-            SteamBoat
+            SteamBoat,
+            Frigate
         }
 
         /// <summary>
