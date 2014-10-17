@@ -24,10 +24,12 @@ namespace ExampleProject
             UnductedFan,
             Ramjet,
             WarpDrive,
-            IonDrive
+            IonDrive,
+            FusionDrive
         }
 
         // Properties
+        public float StallSpeed { get; set; }
         public float Wingspan { get; set; }
         public int NumEngines { get; set; }
         public EngineType TypeOfEngine { get; set; }
