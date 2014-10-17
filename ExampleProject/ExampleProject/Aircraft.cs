@@ -24,7 +24,8 @@ namespace ExampleProject
             UnductedFan,
             Ramjet,
             WarpDrive,
-            IonDrive
+            IonDrive,
+            RubberBand
         }
 
         // Properties
