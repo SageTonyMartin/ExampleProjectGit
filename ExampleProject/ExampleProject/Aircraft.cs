@@ -25,10 +25,12 @@ namespace ExampleProject
             Ramjet,
             WarpDrive,
             IonDrive,
-            RubberBand
+            RubberBand,
+            FusionDrive
         }
 
         // Properties
+        public float StallSpeed { get; set; }
         public float Wingspan { get; set; }
         public int NumEngines { get; set; }
         public EngineType TypeOfEngine { get; set; }
