@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExampleProject
 {
+    /// <summary>
+    /// Class represents an Aircraft.
+    /// </summary>
     public class Aircraft : Vehicle
     {
+        // Enum for aircarft engine type
         public enum EngineType
         {
             None,
