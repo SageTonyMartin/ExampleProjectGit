@@ -22,6 +22,7 @@ namespace ExampleProject
         }
 
         public string Model { get; set; }
+        public DateTime Make { get; set; }
         public FuelType TypeOfFuel { get; set; }
         public string TypeOfEngine { get; set; }
         public DateTime LastMaintenanceDate { get; set; }
