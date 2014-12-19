@@ -31,6 +31,10 @@ namespace ExampleProject
         /// Gets/sets type of boat.
         /// </summary>
         public BoatType TypeOfBoat { get; set; }
+
+        /// <summary>
+        /// The boat's hull displacement when empty.
+        /// </summary>
         public int DisplacementInTons { get; set; }
 
         /// <summary>
