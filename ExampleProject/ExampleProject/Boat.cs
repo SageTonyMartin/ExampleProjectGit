@@ -33,6 +33,11 @@ namespace ExampleProject
         public BoatType TypeOfBoat { get; set; }
 
         /// <summary>
+        /// Date the boat was launched into the sea.
+        /// </summary>
+        public DateTime LaunchDate { get; set;  }
+
+        /// <summary>
         /// Sets a new destination for the boat.
         /// </summary>
         /// <param name="Destination">The new destination for the boat.</param>
